@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
@@ -45,17 +46,16 @@
 	      </div>
 	    </div>
 	  </nav>
-	  
-    <section id="home-section" class="hero">
-		  <div class="home-slider owl-carousel">
-	      <div class="slider-item">
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	      <div class="slider-item ">
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
 	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg2.png);">
 	          		<div class="overlay"></div>
 	          	</div>
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Adnin Ramadhani</span></h1>
@@ -66,6 +66,24 @@
 	        	</div>
 	        </div>
 	      </div>
+
+	      <!-- <div class="slider-item">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg3.png);">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm a <span>web designer</span> based in London</h1>
+			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div> -->
 	    </div>
     </section>
 
@@ -89,7 +107,9 @@
 		            	<li class="d-flex"><span>Name          :</span> <span>Adnin Ramadhani</span></li>
 		            	<li class="d-flex"><span>Date of birth :</span> <span>Desember 06, 2001</span></li>
 		            	<li class="d-flex"><span>Address       :</span> <span>Semarang, Indonesia</span></li>
+		            	<!-- <li class="d-flex"><span>Zip code:</span> <span>1000</span></li> -->
 		            	<li class="d-flex"><span>Email         :</span> <span>adninramadhani01@gmail.com</span></li>
+		            	<!-- <li class="d-flex"><span>Phone: </span> <span>+1-2234-5678-9-0</span></li> -->
 		            </ul>
 		          </div>
 		        </div>
@@ -783,16 +803,6 @@
 	  var modal = document.getElementById("imageModal");
 	  modal.style.display = "none";
 	}
-  </script>
-  <script>
-	document.querySelector('.navbar-toggler').addEventListener('click', function() {
-	  const navbar = document.querySelector('#ftco-nav');
-	  if (navbar.classList.contains('show')) {
-		navbar.classList.remove('show');
-	  } else {
-		navbar.classList.add('show');
-	  }
-	});
   </script>
     
   </body>

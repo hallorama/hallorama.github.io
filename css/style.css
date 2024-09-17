@@ -9737,20 +9737,3 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
-
-    .hero {
-      height: auto;
-      min-height: 100vh; /* pastikan tingginya setidaknya 100% tinggi viewport */
-    }
-    .js-fullheight {
-      height: auto; /* ubah dari 100% menjadi auto */
-    }
-
-    .fixed-navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      background-color: #333; /* Ganti dengan warna navbar sesuai tema */
-    }
-    
