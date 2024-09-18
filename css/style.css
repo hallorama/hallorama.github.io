@@ -9747,11 +9747,26 @@ textarea.form-control {
 
   /* Menu button color change on scroll */
   .navbar.scrolled .navbar-toggler {
-    color: #000000; /* Change button color */
+    color: #b3b3b3; /* Change button color */
     border-color: #000000; /* Change border color */
   }
 
   /* Menu button icon color */
   .navbar-toggler .oi-menu {
-    color: inherit;
+    color:#b3b3b3;
   }
+
+  .oi-menu{
+    color:#b3b3b3;
+    font-weight: 400; /* Poppins Regular */
+    text-transform: none; /* Ensure no uppercase (capslock) */
+    font-size: 16px;
+  }
+
+  @media (max-width: 767px) {
+    /* Change menu text color on scroll in mobile view */
+    .navbar.scrolled .nav-link {
+      color: #b3b3b3 !important; /* Change text color to #b3b3b3 */
+    }
+  }
+
