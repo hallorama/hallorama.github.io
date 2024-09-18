@@ -270,17 +270,6 @@
   });
 
 
-  
-  document.addEventListener('touchmove', function(e) {
-    e.preventDefault();
-}, { passive: false });
-
-document.addEventListener('scroll', function() {
-    document.body.style.overflow = 'auto';
-    document.documentElement.style.overflow = 'auto';
-});
-
-
 
 
 

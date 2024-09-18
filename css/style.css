@@ -9737,33 +9737,3 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
-
-
-    body, html {
-      overflow-y: auto !important;  /* Pastikan scroll bisa dilakukan */
-      height: auto !important;      /* Pastikan tinggi tidak dikunci */
-      touch-action: auto;           /* Izinkan interaksi sentuh pada mobile */
-      position: relative;
-  }
-  
-  * {
-    overflow: visible !important;  /* Izinkan semua elemen untuk scroll */
-}
-
-.js-fullheight {
-  height: auto !important;
-  min-height: 100vh;  /* Pastikan tinggi cukup untuk viewport */
-}
-
-.slider-item {
-  height: auto !important;  /* Pastikan tidak ada penguncian scroll */
-}
-
-.menu-toggle, .menu {
-  pointer-events: auto !important;
-  z-index: 9999;  /* Pastikan berada di atas elemen lain */
-}
-
-.slider-item {
-  position: relative !important;  /* Hindari fixed jika tidak diperlukan */
-}
