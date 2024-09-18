@@ -9738,16 +9738,32 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-    @media (max-width: 768px) {
-      .js-fullheight {
-          height: auto;  /* Pastikan elemen tidak lebih dari ukuran layar */
-          overflow-y: auto;
-      }
+
+    body, html {
+      overflow-y: auto !important;  /* Pastikan scroll bisa dilakukan */
+      height: auto !important;      /* Pastikan tinggi tidak dikunci */
+      touch-action: auto;           /* Izinkan interaksi sentuh pada mobile */
+      position: relative;
   }
   
-  .slider-item {
-    overflow: visible;  /* Izinkan konten melebihi batas elemen */
+  * {
+    overflow: visible !important;  /* Izinkan semua elemen untuk scroll */
 }
-.menu-toggle {
-  z-index: 9999;  /* Pastikan menu berada di atas elemen lain */
+
+.js-fullheight {
+  height: auto !important;
+  min-height: 100vh;  /* Pastikan tinggi cukup untuk viewport */
+}
+
+.slider-item {
+  height: auto !important;  /* Pastikan tidak ada penguncian scroll */
+}
+
+.menu-toggle, .menu {
+  pointer-events: auto !important;
+  z-index: 9999;  /* Pastikan berada di atas elemen lain */
+}
+
+.slider-item {
+  position: relative !important;  /* Hindari fixed jika tidak diperlukan */
 }

@@ -269,11 +269,16 @@
     fixedContentPos: false
   });
 
-  $('button.menu-toggle').click(function() {
-    console.log('Menu clicked');
-    // Pastikan class untuk menampilkan menu ada di sini
-});
 
+  
+  document.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+}, { passive: false });
+
+document.addEventListener('scroll', function() {
+    document.body.style.overflow = 'auto';
+    document.documentElement.style.overflow = 'auto';
+});
 
 
 
