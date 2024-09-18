@@ -276,6 +276,10 @@ $('.navbar-nav a').on('click', function () {
     }
 });
 
+$(document).ready(function(){
+    $.Scrollax();
+});
+
 
 
 
