@@ -269,40 +269,8 @@
     fixedContentPos: false
   });
 
-// Ensure menu toggles properly on mobile
-$('.navbar-nav a').on('click', function () {
-    if ($('.navbar-toggler').is(':visible')) {
-        $('.navbar-collapse').collapse('hide');
-    }
-});
 
-$(document).ready(function(){
-    $.Scrollax();
-});
 
-$('.navbar-toggler').on('click', function() {
-    $('.navbar-collapse').toggleClass('show');
-});
-
-$(window).on('scroll', function() {
-    if ($('.navbar-collapse').hasClass('show')) {
-        $('.navbar-collapse').removeClass('show');
-    }
-});
-
-// Smooth scrolling untuk semua link
-$('a.nav-link').on('click', function(event) {
-	if (this.hash !== "") {
-	  event.preventDefault();
-	  var hash = this.hash;
-	  $('html, body').animate({
-		scrollTop: $(hash).offset().top
-	  }, 800, function(){
-		window.location.hash = hash;
-	  });
-	}
-  });
-  
 
 
 })(jQuery);
