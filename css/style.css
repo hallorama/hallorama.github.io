@@ -9737,3 +9737,21 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+     /* Navbar background color change on scroll */
+  .navbar.scrolled {
+    /* background-color: #ffffff !important; */
+    transition: background-color 0.3s;
+  }
+
+  /* Menu button color change on scroll */
+  .navbar.scrolled .navbar-toggler {
+    color: #000000; /* Change button color */
+    border-color: #000000; /* Change border color */
+  }
+
+  /* Menu button icon color */
+  .navbar-toggler .oi-menu {
+    color: inherit;
+  }

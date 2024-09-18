@@ -805,5 +805,22 @@
 	}
   </script>
     
+
+	<script>
+		$(document).ready(function() {
+		  // Fix scrolling issue for mobile
+		  $('body').css('overflow', 'auto');
+	  
+		  // Change navbar and menu button color on scroll
+		  $(window).scroll(function() {
+			var scrollTop = $(this).scrollTop();
+			if (scrollTop > 50) { // Adjust the scroll value to your preference
+			  $('#ftco-navbar').addClass('scrolled');
+			} else {
+			  $('#ftco-navbar').removeClass('scrolled');
+			}
+		  });
+		});
+	  </script>
   </body>
 </html>
