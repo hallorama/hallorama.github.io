@@ -9743,3 +9743,26 @@ textarea.form-control {
   height: auto !important;
   min-height: 100vh;
 }
+
+#home-section {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+#ftco-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Menjaga navbar tetap terlihat di atas */
+.navbar {
+  z-index: 1030;
+}
+
+/* Atur agar tombol navbar tetap terlihat saat di-scroll */
+.navbar-toggler {
+  position: relative;
+  z-index: 1050;
+}
