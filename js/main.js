@@ -269,6 +269,12 @@
     fixedContentPos: false
   });
 
+  $('button.menu-toggle').click(function() {
+    console.log('Menu clicked');
+    // Pastikan class untuk menampilkan menu ada di sini
+});
+
+
 
 
 
