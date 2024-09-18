@@ -9738,31 +9738,8 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-
-    @media (max-width: 767px) {
-      .hero {
-        height: 100vh;
-        overflow-y: auto;
-      }
-      .slider-item {
-        height: auto;
-        min-height: 100vh;
-      }
-      .one-third {
-        height: 50vh !important;
-      }
-    }
-    
-    /* Pastikan menu tetap terlihat */
-    .ftco-navbar-light {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1030;
-    }
-    
-    /* Tambahkan transisi untuk animasi menu */
-    .navbar-collapse {
-      transition: all 0.3s ease;
-    }
+    /* Fix for mobile scroll issue */
+.js-fullheight {
+  height: auto !important;
+  min-height: 100vh;
+}

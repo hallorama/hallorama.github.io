@@ -269,6 +269,12 @@
     fixedContentPos: false
   });
 
+// Ensure menu toggles properly on mobile
+$('.navbar-nav a').on('click', function () {
+    if ($('.navbar-toggler').is(':visible')) {
+        $('.navbar-collapse').collapse('hide');
+    }
+});
 
 
 
