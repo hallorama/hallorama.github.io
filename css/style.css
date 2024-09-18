@@ -9738,8 +9738,16 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-    .js-fullheight {
-      height: 100vh;
-      overflow: hidden;
+    @media (max-width: 768px) {
+      .js-fullheight {
+          height: auto;  /* Pastikan elemen tidak lebih dari ukuran layar */
+          overflow-y: auto;
+      }
   }
   
+  .slider-item {
+    overflow: visible;  /* Izinkan konten melebihi batas elemen */
+}
+.menu-toggle {
+  z-index: 9999;  /* Pastikan menu berada di atas elemen lain */
+}
